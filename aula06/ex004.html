@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escrevendo na tela</title>
+    <style>
+        body{
+            font: 1.5em Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Digite o seu nome")
+        document.write(`Olá, <em>${nome}</em> o seu nome tem ${nome.length} letras <br>`)
+        document.write(`${nome}, o seu nome em maiusculas é ${nome.toUpperCase()} <br>`)
+        document.write(`${nome}, o seu nome em minusculas é ${nome.toLowerCase()} <br>`)
+    </script>
+    
+</body>
+</html>
