@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt.pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedindo dados em JS</title>
+
+    <style>
+        button{
+            padding: 30px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando dados v1.0</h1>
+
+    <button onclick="clique()">Clique para começar</button>
+
+    <script>
+        function clique() {
+           var nome = window.prompt("Qual é o teu nome ?");
+
+           window.alert(`É um prazer te conhecer ${nome} !`);
+
+        }
+    </script>
+</body>
+</html>
