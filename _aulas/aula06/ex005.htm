@@ -16,16 +16,31 @@
 </head>
 <body>
 
-    <h1>Iniciando estudos com DOM</h1>
+    <h1 name="msg">Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado...</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="d">Clique em mim</div>
 
     <script>
         var corpo = window.document.body
         var p1= window.document.getElementsByTagName('p')[1]
-        
-        
+        window.document.write(p1.innerText)
+        p1.style.color="blue"
+        window.document.getElementById(d)
+
+        /*
+        d.innerText="Eu me amo !"
+
+        window.document.getElementById("d").innerText="Estou me aplicando em DOM"
+
+        window.document.getElementsByName("msg")[0].innerText="JavaScript é o maximo" 
+
+         window.document.querySelector('div#d').style.color="red"
+
+
+        */
+
+       
     </script>
 </body>
 </html>

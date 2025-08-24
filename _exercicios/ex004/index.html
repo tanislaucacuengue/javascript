@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedindo dados JS</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        button{
+            padding: 40px;
+            font-size: 1em;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+
+     <button onclick="clicar()">Clicar para começar</button>
+
+     <p id="nome">Aqui vai aprecer o resultado...</p>
+
+     <script>
+        function clicar() {
+
+            var nome = window.prompt("Qual é o teu nome ?")
+            var valor = window.document.getElementById("nome")
+            valor.innerHTML= `Olá, <strong>${nome}!!</strong>, É um grande prazer te conhecer &#x1F596;!`
+            
+        }
+     </script>
+    
+</body>
+</html>
