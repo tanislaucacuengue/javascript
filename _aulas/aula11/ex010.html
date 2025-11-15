@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condições em JS</title>
+    <style>
+        body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        color: #fff;
+        background-color: rgb(0, 0, 22);
+
+        }
+
+        input#txtvel{
+            width: 70px;
+            padding: 10px;
+        }
+
+        #button{
+            padding: 7.5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.7em;
+            cursor: pointer;
+            background-color: skyblue;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #button:hover{
+            background-color: #0FF;
+        }
+
+
+    </style>
 </head>
 <body>
     <h1>Sistema de multas</h1>
     Qual é a velocidade do carro <input type="number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
+    <input type="button" value="Verificar" onclick="calcular()" id="button">
     <div id="resultado">
         O resultado vai aqui...
     </div>
@@ -16,16 +47,20 @@
     <script>
     
         function calcular() {
+
              var txtv = window.document.getElementById('txtvel')
              var res = window.document.querySelector('div#resultado')
              var vel = Number(txtv.value)
              res.innerHTML = `<p>A sua velocidade atual de <mark>${vel}</mark> km/h.</p>`
+
+
              if (vel > 60) {
                 res.innerHTML += `<p>Você está a ser multado por <strong>não respeitar</strong> o limite de velocidade</p>`
              }
              else{
                 res.innerHTML += `<p>Você <strong>respeita</strong> o limite de velocidade contiinui assim!!</p>`
              }
+
              res.innerHTML += `<p>Dirija sempre usando cinto de <strong>seguraça!!</strong></p>`
 
         }

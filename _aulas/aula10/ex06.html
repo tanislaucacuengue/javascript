@@ -11,8 +11,8 @@
         }
 
         div#area{
-            background-color: skyblue;
-            color: darkblue;
+            background-color: green;
+            color: #fff;
             width: 200px;
             height: 200px;
             line-height: 200px;
@@ -20,14 +20,14 @@
             border-radius: 5px;
             font-size: 2em;
             padding: 20px;
-            margin: 10px;
+            margin: auto;
             
             
         }
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <div id="area" onmouseenter="entrar()">
         Interaja...
     </div>
 
@@ -35,13 +35,14 @@
    <script>
 
     var area = window.document.getElementById("area")
-    //addEventListener("click", clicar)
-    //addEventListener("mouseenter", entrar)
-    //addEventListener("mouseout", sair)
-   
+    addEventListener('click', clicar)
+    addEventListener('mouseout', sair)
+    //addEventListener('mouseenter', entrar)
+
         function clicar() {
            area.innerText= "Clicou !!"
-           area.style.backgroundColor ="darkgray"
+           area.style.backgroundColor ="red"
+           area.style.color="white"
         }
 
         function entrar() {
@@ -52,8 +53,8 @@
 
         function sair() {
             area.innerText="Saiu !!"
-            area.style.backgroundColor ="skyblue"
-            area.style.color="darkblue"
+            area.style.backgroundColor ="yellow"
+            area.style.color="white"
         }
    </script> 
 </body>
