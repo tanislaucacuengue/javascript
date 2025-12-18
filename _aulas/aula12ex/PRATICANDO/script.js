@@ -6,6 +6,8 @@ var sec = window.document.getElementById('sec')
 
 time.innerHTML = `Agora são ${hora} horas`
 
+/* As condições que mudam o fundo e a saudação */
+
 if (hora >= 6 && hora < 12) {
     res.innerHTML = 'Bom dia'
     window.document.body.style.backgroundImage = 'url(img/manha.jpg)'
