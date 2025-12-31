@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo de exercício</title>
+</head>
+<body>
+    <header>
+        <h1>VAMOS CONTAR!!</h1>
+    </header>
+
+
+    <section>
+        <div>
+            <label for="inicio">ÍNICIO:</label>
+            <input type="number" name="inicio" id="inicio" placeholder="Digite o ínicio"> <br><br>
+
+            <label for="fim">FINAL:</label>
+            <input type="number" name="fim" id="fim" placeholder="Digite o final">
+            <br><br>
+
+            <label for="passo">PASSOS:</label>
+            <input type="number" name="passo" id="passo" placeholder="Digite passo">
+             <br><br>
+
+            
+            <button type="button" onclick="contar()" value="contar">Contar</button>
+        </div>
+
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;ConectaTI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
